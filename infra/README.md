@@ -29,7 +29,7 @@ ___
 
 Для нашей задачи создадим следующее:
 
-<img style="margin-left: 20%; width: 60%" src="./img/5.png" alt="drawing" />
+<img style="margin-left: 20%; width: 40%" src="./img/5.png" alt="drawing" />
 
 [Файлы для TERRAFORM](./config/README.md)
 
