@@ -9,11 +9,11 @@ terraform {
 
     backend "s3" {
       endpoint   = "storage.yandexcloud.net"
-      bucket     = "galtsev001-bucket"
+      bucket     = "<backet>"
       region     = "ru-central1-a"
       key        = "./terraform.tfstate"
-      access_key = "YCAJEvnZaDY6x5th_ClOhZD4j"
-      secret_key = "YCNClMWftESgSoucyP0TcOBj51wJxrbfSY7Q7cd6"
+      access_key = "<access_key>"
+      secret_key = "<secret_key>"
 
       skip_region_validation      = true
       skip_credentials_validation = true
@@ -22,9 +22,9 @@ terraform {
 
 # Подключение к YC
 provider "yandex" {
-  token     = "AQAAAAACi01KAATuwejtKPJgT0QEqrZpbORoEi4"
-  cloud_id  = "b1g57d4rv7a3m4dmuhro"
-  folder_id = "b1geodooefjvhq6dtnii"
+  token     = "<token>"
+  cloud_id  = "<id>"
+  folder_id = "<folder>"
   zone      = "ru-central1-a"
 }
 
