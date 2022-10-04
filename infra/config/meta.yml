@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: galtsev001
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCjynLiTOwk/1YKxYKO/CzkqUosYV/j2gfizYqpxYfoR4qIQ/eUVgkdZK45jID6wxJCBPRnvDCwJjcw5BiPVGfu6RfpyViHA78mZBjZVYdkuOZzsSe1VstdJAJ8oD0kMrIscpLkflcb7J1eX2PDYJukxkMT6j46anR8afYsop/o7u9To+Y/RnOF2EWXVf4+r7TeCOFM6u2W6ywsu14K7PQfL3vgLf4nfes/arMYDzf5i/3uNXdBTHBk4vRufB3+b4S9JC8IrCLBAAN07snK5mM5cWku8JTKyXVbw17dF8EF26Oi4MgBEQIDZ39eEHDBnnWk6hgw3T9tLm8vk70EsnoQFqAJ1m2YihnrJCNIE3oBWIrh4mq3bFt0DFAcVNRSy131KuVTS4sdjIWe8mHBqFCCIIPfKE4NJs0+yfHEFq1JszClXW9haBFCdkFid+024GgwAYOaJ+7t8JEQxTlnhOzPlKAuYFj9o4exha4yqcS8P4mOz21sMo4ytVHEi0/U968= bridgestone-eu\sergey.galtsev@RUMFUL00197
