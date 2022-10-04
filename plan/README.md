@@ -14,7 +14,8 @@ ___
 
 В рамках дипломной работы будет реализована схема, указаная ниже:
 
-![img.png](./img/1.png)
+<img style="margin-left: 2%; width: 96%" src="./img/1.png" alt="drawing" />
+
 
 [На главную](../README.md)
 

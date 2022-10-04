@@ -12,31 +12,31 @@ ___
 Сервисный аккаунт необходим для управления ресурсами `Yandex Cloud`. От его имени также будем производить доступ к `Yandex Object Storage` для получения файла состояния (явки пароли для подключения)
 Проверил в консоле Yandex Cloud у меня уже создана учетная запись, воспользуемся ей:
 
-![img.png](./img/1.png)
+<img style="margin-left: 20%; width: 60%" src="./img/1.png" alt="drawing" />
 
 ##### Создание Yandex Object Storage
 
 + Находим пункт Yandex Object Storage
 + Укажем минимальную конфигурацию. Выбираем тип хранения `холодный` т.к. не планируем частое изменение инфраструктуры.
 
-![img.png](./img/2.png)
+<img style="margin-left: 20%; width: 60%" src="./img/2.png" alt="drawing" />
 
 + Создаем ключ, чтобы использовать его для подключения
 
-![img.png](./img/3.png)
+<img style="margin-left: 20%; width: 60%" src="./img/3.png" alt="drawing" />
 
 ##### Создание файлов конфигурации
 
 Для нашей задачи создадим следующее:
 
-![img.png](./img/5.png)
+<img style="margin-left: 20%; width: 60%" src="./img/5.png" alt="drawing" />
 
 [Файлы для TERRAFORM](./config/README.md)
 
 Так как наша задача состоит в составлении скрипта автоматизирующего нашу работу, нам необходимо получить с помощью `terraform` инвентори для `ansible`.
 Для этого после развертывания инфраструктуры используем команду `terraform output > output_data.txt`, который на основании шаблона инвентори, создает файл со всеми необходимыми параметрами. За это отвечает эта часть описания файла `main.tf`:
 
-```json
+```bash
 output "ansible_inventory" {
   value = templatefile("inventory.yml.tpl", {
     master = "${yandex_compute_instance.master.network_interface.0.nat_ip_address}"
