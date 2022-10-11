@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitlab-app
+  labels:
+    app: gitlab-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: gitlab-app
+  template:
+    metadata:
+      labels:
+        app: gitlab-app
+    spec:
+      containers:
+      - name: gitlab-app
+        image: registry.gitlab.com/galtsev001/diplom-test-app:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: gitlab-reg
+
