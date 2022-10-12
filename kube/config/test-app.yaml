@@ -1,0 +1,26 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-test-app
+  namespace: prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gitlab-app
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: test-app
+    spec:
+      containers:
+      - image: registry.gitlab.com/galtsev001/diplom-test-app:latest
+        name: diplom-test-app
+        ports:
+        - containerPort: 80

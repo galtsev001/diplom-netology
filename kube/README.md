@@ -78,7 +78,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ![img.png](./img/2.png)
 
-![img.png](./img/4.png)
+![img.png](./img/3.png)
 
 ##### Настройка подключения к кластеру
 
