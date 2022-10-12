@@ -78,3 +78,7 @@ kubectl apply -f service-test.yaml -n test
 
 ![img.png](./img/6.png)
 
+[Ссылка](http://178.154.224.95:30001) на тестовое приложение
+
+
+
