@@ -22,7 +22,7 @@ pip3 install -r ./kubespray/requirements.txt
 cp -r ./kubespray/inventory/sample/* ./inventory
 ```
 
-Туда вставим заранее подготовленный фавйл инвентори `inventory.yaml`
+Туда вставим заранее подготовленный файл инвентори `inventory.yaml`
 
 ```bash
 all:
@@ -86,12 +86,12 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```bash
 echo "supplementary_addresses_in_ssl_keys: [10.10.10.10] >> ./inventory/group_vars/k8s_cluster/k8s-cluster.yml"
 ```
-После установки `kubernets` копируем файл конффигурации на `control panel`
+После установки `kubernetes` копируем файл конфигурации `control panel` на локальную машину
 
 ```bash
 cat ~/.kube/config
 ```
-Всю выводимую информацию сохраняем на локальной машине по такому же пути и под таким же имененм. Меняем localhost на ip control panel
+Всю выводимую информацию сохраняем на локальной машине по такому же пути и под таким же именем. Меняем localhost на ip control panel
 Проверяем подключение:
 
 ![img.png](./img/4.png)
