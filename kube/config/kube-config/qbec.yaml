@@ -1,0 +1,13 @@
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: myapp
+spec:
+  environments:
+    prod:
+      defaultNamespace: prod  
+      server: https://84.201.130.48:6443
+    stage:
+      defaultNamespace: stage
+      server: https://178.154.224.155:6443
+  vars: {}
