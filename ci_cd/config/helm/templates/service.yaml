@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gitlab-app-service
+  namespace: prod
 spec:
   type: NodePort
   selector:
