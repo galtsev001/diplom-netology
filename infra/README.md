@@ -86,3 +86,7 @@ Changes to Outputs:
 После развертывания инфраструктуры видем что файл `terraform.tfstate` записан успешно:
 
 ![img.png](./img/4.png)
+
+---
+
+[На главную](../README.md)

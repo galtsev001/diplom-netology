@@ -80,5 +80,9 @@ kubectl apply -f service-test.yaml -n test
 
 [Ссылка](http://178.154.224.95:30001) на тестовое приложение
 
+---
+
+[На главную](../README.md)
+
 
 

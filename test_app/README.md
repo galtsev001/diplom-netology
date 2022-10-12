@@ -69,4 +69,6 @@ docker run -p 8888:80 -t registry.gitlab.com/galtsev001/diplom-test-app
 
 ![img.png](./img/1.png)
 
+---
 
+[На главную](../README.md)

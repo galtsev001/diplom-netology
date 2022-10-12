@@ -95,3 +95,7 @@ cat ~/.kube/config
 Проверяем подключение:
 
 ![img.png](./img/4.png)
+
+---
+
+[На главную](../README.md)

@@ -68,3 +68,6 @@
 
 + [Ссылка на репозиторий в Gitlab c описанием процессов](https://gitlab.com/galtsev001/diplom-test-app)
 
+---
+
+[На главную](../README.md)
