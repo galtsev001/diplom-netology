@@ -71,4 +71,4 @@ docker run -p 8888:80 -t registry.gitlab.com/galtsev001/diplom-test-app
 
 ---
 
-[На главную](../README.md)
+[На главную](../README.md#создание-тестового-приложения)

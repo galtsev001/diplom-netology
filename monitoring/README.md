@@ -82,7 +82,7 @@ kubectl apply -f service-test.yaml -n test
 
 ---
 
-[На главную](../README.md)
+[На главную](../README.md#подготовка-cистемы-мониторинга-и-деплой-приложения)
 
 
 
